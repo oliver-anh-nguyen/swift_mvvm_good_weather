@@ -15,6 +15,8 @@
 		5845A06728A4775C00378DF4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845A06628A4775C00378DF4 /* String+Extensions.swift */; };
 		5845A06928A4791600378DF4 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845A06828A4791600378DF4 /* WeatherListViewModel.swift */; };
 		5845A06B28A48AF000378DF4 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845A06A28A48AF000378DF4 /* Double+Extensions.swift */; };
+		5845A06D28A4975700378DF4 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845A06C28A4975700378DF4 /* SettingsTableViewController.swift */; };
+		5845A06F28A4982900378DF4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845A06E28A4982900378DF4 /* SettingsViewModel.swift */; };
 		58FD89F828A45E0700B059A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD89F728A45E0700B059A4 /* AppDelegate.swift */; };
 		58FD89FA28A45E0700B059A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD89F928A45E0700B059A4 /* SceneDelegate.swift */; };
 		58FD89FF28A45E0700B059A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FD89FD28A45E0700B059A4 /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		5845A06628A4775C00378DF4 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		5845A06828A4791600378DF4 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		5845A06A28A48AF000378DF4 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		5845A06C28A4975700378DF4 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		5845A06E28A4982900378DF4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		58FD89F428A45E0700B059A4 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FD89F728A45E0700B059A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58FD89F928A45E0700B059A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 			children = (
 				5845A06028A476A500378DF4 /* AddWeatherViewModel.swift */,
 				5845A06828A4791600378DF4 /* WeatherListViewModel.swift */,
+				5845A06E28A4982900378DF4 /* SettingsViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			children = (
 				58FD8A0C28A4652100B059A4 /* WeatherListTableViewController.swift */,
 				58FD8A0E28A4654B00B059A4 /* AddWeatherCityViewController.swift */,
+				5845A06C28A4975700378DF4 /* SettingsTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -222,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5845A06B28A48AF000378DF4 /* Double+Extensions.swift in Sources */,
+				5845A06D28A4975700378DF4 /* SettingsTableViewController.swift in Sources */,
 				5845A06728A4775C00378DF4 /* String+Extensions.swift in Sources */,
 				58FD8A0D28A4652100B059A4 /* WeatherListTableViewController.swift in Sources */,
 				5845A06128A476A500378DF4 /* AddWeatherViewModel.swift in Sources */,
@@ -233,6 +240,7 @@
 				58FD8A0F28A4654B00B059A4 /* AddWeatherCityViewController.swift in Sources */,
 				58FD89FA28A45E0700B059A4 /* SceneDelegate.swift in Sources */,
 				5845A06428A476FF00378DF4 /* Constants.swift in Sources */,
+				5845A06F28A4982900378DF4 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

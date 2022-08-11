@@ -11,10 +11,16 @@ import UIKit
 class WeatherListTableViewController: UITableViewController, AddWeatherDelegate {
     
     private var weatherListViewModel = WeatherListViewModel()
+    private var lastUnitSelection: Unit!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        let userDefaults = UserDefaults.standard
+        if let value = userDefaults.value(forKey: "unit") as? String {
+            self.lastUnitSelection = Unit(rawValue: value)!
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -40,7 +46,21 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "AddWeatherCityViewController" {
             prepareSegueForAddWeather(segue: segue)
+        } else if segue.identifier == "SettingsTableViewController" {
+            prepareSegueForSetting(segue: segue)
         }
+    }
+    
+    func prepareSegueForSetting(segue: UIStoryboardSegue) {
+        guard let nav = segue.destination as? UINavigationController else {
+            fatalError("UINavigationController not found")
+        }
+        
+        guard let addWeatherCityVC = nav.viewControllers.first as? SettingsTableViewController else {
+            fatalError("SettingsTableViewController not found")
+        }
+        
+        addWeatherCityVC.delegate = self
     }
     
     func prepareSegueForAddWeather(segue: UIStoryboardSegue) {
@@ -53,5 +73,15 @@ class WeatherListTableViewController: UITableViewController, AddWeatherDelegate 
         }
         
         addWeatherCityVC.delegate = self
+    }
+}
+
+extension WeatherListTableViewController: SettingsDelegate {
+    func settingDone(vm: SettingsViewModel) {
+        if lastUnitSelection.rawValue != vm.selectedUnit.rawValue {
+            self.weatherListViewModel.updateUnit(to: vm.selectedUnit)
+            self.tableView.reloadData()
+            self.lastUnitSelection = Unit(rawValue: vm.selectedUnit.rawValue)!
+        }
     }
 }
