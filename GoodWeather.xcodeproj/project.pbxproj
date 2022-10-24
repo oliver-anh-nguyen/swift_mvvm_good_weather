@@ -17,6 +17,8 @@
 		5845A06B28A48AF000378DF4 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845A06A28A48AF000378DF4 /* Double+Extensions.swift */; };
 		5845A06D28A4975700378DF4 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845A06C28A4975700378DF4 /* SettingsTableViewController.swift */; };
 		5845A06F28A4982900378DF4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5845A06E28A4982900378DF4 /* SettingsViewModel.swift */; };
+		5850658E28A875AA0029263D /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850658D28A875AA0029263D /* SettingsViewModelTests.swift */; };
+		5850659228A87BC60029263D /* WeatherListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850659128A87BC60029263D /* WeatherListViewModelTests.swift */; };
 		58FD89F828A45E0700B059A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD89F728A45E0700B059A4 /* AppDelegate.swift */; };
 		58FD89FA28A45E0700B059A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD89F928A45E0700B059A4 /* SceneDelegate.swift */; };
 		58FD89FF28A45E0700B059A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FD89FD28A45E0700B059A4 /* Main.storyboard */; };
@@ -25,6 +27,16 @@
 		58FD8A0D28A4652100B059A4 /* WeatherListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD8A0C28A4652100B059A4 /* WeatherListTableViewController.swift */; };
 		58FD8A0F28A4654B00B059A4 /* AddWeatherCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FD8A0E28A4654B00B059A4 /* AddWeatherCityViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5850658828A875370029263D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58FD89EC28A45E0700B059A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58FD89F328A45E0700B059A4;
+			remoteInfo = GoodWeather;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5845A05728A468CA00378DF4 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
@@ -37,6 +49,9 @@
 		5845A06A28A48AF000378DF4 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		5845A06C28A4975700378DF4 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		5845A06E28A4982900378DF4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		5850658428A875370029263D /* GoodWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5850658D28A875AA0029263D /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
+		5850659128A87BC60029263D /* WeatherListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModelTests.swift; sourceTree = "<group>"; };
 		58FD89F428A45E0700B059A4 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FD89F728A45E0700B059A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58FD89F928A45E0700B059A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +64,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5850658128A875370029263D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58FD89F128A45E0700B059A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -110,10 +132,20 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		5850658528A875370029263D /* GoodWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				5850658D28A875AA0029263D /* SettingsViewModelTests.swift */,
+				5850659128A87BC60029263D /* WeatherListViewModelTests.swift */,
+			);
+			path = GoodWeatherTests;
+			sourceTree = "<group>";
+		};
 		58FD89EB28A45E0700B059A4 = {
 			isa = PBXGroup;
 			children = (
 				58FD89F628A45E0700B059A4 /* GoodWeather */,
+				5850658528A875370029263D /* GoodWeatherTests */,
 				58FD89F528A45E0700B059A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				58FD89F428A45E0700B059A4 /* GoodWeather.app */,
+				5850658428A875370029263D /* GoodWeatherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +192,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5850658328A875370029263D /* GoodWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5850658C28A875370029263D /* Build configuration list for PBXNativeTarget "GoodWeatherTests" */;
+			buildPhases = (
+				5850658028A875370029263D /* Sources */,
+				5850658128A875370029263D /* Frameworks */,
+				5850658228A875370029263D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5850658928A875370029263D /* PBXTargetDependency */,
+			);
+			name = GoodWeatherTests;
+			productName = GoodWeatherTests;
+			productReference = 5850658428A875370029263D /* GoodWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		58FD89F328A45E0700B059A4 /* GoodWeather */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58FD8A0828A45E0900B059A4 /* Build configuration list for PBXNativeTarget "GoodWeather" */;
@@ -186,6 +237,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					5850658328A875370029263D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 58FD89F328A45E0700B059A4;
+					};
 					58FD89F328A45E0700B059A4 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -205,11 +260,19 @@
 			projectRoot = "";
 			targets = (
 				58FD89F328A45E0700B059A4 /* GoodWeather */,
+				5850658328A875370029263D /* GoodWeatherTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5850658228A875370029263D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58FD89F228A45E0700B059A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +286,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5850658028A875370029263D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5850658E28A875AA0029263D /* SettingsViewModelTests.swift in Sources */,
+				5850659228A87BC60029263D /* WeatherListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		58FD89F028A45E0700B059A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +318,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5850658928A875370029263D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58FD89F328A45E0700B059A4 /* GoodWeather */;
+			targetProxy = 5850658828A875370029263D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		58FD89FD28A45E0700B059A4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -266,6 +346,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5850658A28A875370029263D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9JSRL669P2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ata.studio.vn.GoodWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWeather.app/GoodWeather";
+			};
+			name = Debug;
+		};
+		5850658B28A875370029263D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9JSRL669P2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ata.studio.vn.GoodWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWeather.app/GoodWeather";
+			};
+			name = Release;
+		};
 		58FD8A0628A45E0900B059A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -439,6 +555,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5850658C28A875370029263D /* Build configuration list for PBXNativeTarget "GoodWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5850658A28A875370029263D /* Debug */,
+				5850658B28A875370029263D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		58FD89EF28A45E0700B059A4 /* Build configuration list for PBXProject "GoodWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
